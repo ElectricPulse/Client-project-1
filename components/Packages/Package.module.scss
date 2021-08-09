@@ -1,0 +1,18 @@
+@import 'styles/variables';
+
+.root {
+  h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 0.3em;
+    border-radius: 4px;
+    background-color: $color-primary;
+    display: inline-block;
+
+    margin-bottom: 15px;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,18 @@
+@import 'styles/variables';
+
+.root {
+  box-shadow: $shadow;
+  padding: 22px;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+}

@@ -1,0 +1,45 @@
+@import './variables';
+
+////////////////
+/// Project Resets
+////////////////
+
+html,
+body {
+  font-family: 'Open Sans', arial, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+//////////////////////////////////
+/// Element Resets + Default Stylings
+//////////////////////////////////
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+input {
+  border: none;
+  border-radius: none;
+  outline: none;
+  font-family: inherit;
+}
+

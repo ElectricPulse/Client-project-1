@@ -1,0 +1,7 @@
+@import 'styles/variables';
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: max(20px, 4vw)
+}

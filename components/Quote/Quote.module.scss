@@ -1,0 +1,30 @@
+@import 'styles/variables';
+
+.root {
+  position: relative;
+
+  margin-block: max(100px, 10vh);
+  margin-inline: auto;
+  padding: 1.2em 1.5em;
+  background-color: #fff3bc;
+
+  font-size: 2.6rem;
+  font-family: Georgia;
+
+  &::after {
+    content: '\201C';
+    position: absolute;
+    left: 5px;
+    top: -25px;
+
+    font-size: 7.5em;
+    color: $color-grey-1;
+  }
+}
+
+.text {
+  width: 25ch;
+
+  position: relative;
+  z-index: 1;
+}

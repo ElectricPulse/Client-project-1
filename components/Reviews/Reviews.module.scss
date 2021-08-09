@@ -1,0 +1,33 @@
+@import 'styles/variables';
+
+.root {
+  background-color: $color-grey-1;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  $skew: 5deg;
+  margin-inline: auto;
+  margin-block: max(20px, 4vw);
+
+  align-items: center;
+
+  > * {
+    transform: skewX($skew);
+
+    > * {
+      transform: skewX(-$skew);
+    }
+  }
+
+  > *:nth-child(odd) {
+    transform: skewX(-$skew);
+
+    > * {
+      transform: skewX($skew);
+    }
+  }
+}

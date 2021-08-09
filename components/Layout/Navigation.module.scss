@@ -1,0 +1,14 @@
+@import 'styles/variables';
+
+.navigation {
+  z-index: 1;
+
+  &--fixed {
+    position: fixed !important;
+    inset-inline: 0;
+    top: 0;
+  }
+}
+
+
+

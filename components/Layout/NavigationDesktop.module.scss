@@ -1,0 +1,14 @@
+@import 'styles/variables';
+
+.root {
+  display: flex;
+  padding: max(15px, 3vw);
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  gap: max(10px, 2vw);
+
+  font-size: 1.8rem;
+}

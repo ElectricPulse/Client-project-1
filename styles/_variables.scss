@@ -1,0 +1,34 @@
+////////////////
+/// Colors
+////////////////
+
+$color-primary: #ff9c00;
+$color-secondary: #fffdf7;
+
+$color-grey-1: rgb(230, 230, 230);
+$color-grey-2: rgb(85, 85, 85);
+$color-white: white;
+$color-black: black;
+
+////////////////
+/// Other Variables
+////////////////
+
+$fillet: 5px;
+$shadow: 0 10px 20px rgb(black, 0.5);
+
+////////////////
+/// Breakpoints
+////////////////
+
+$bp-mobile: 500px;
+
+////////////////
+/// Mixins
+////////////////
+
+@mixin screen($breakpoint: '') {
+  @media only screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
