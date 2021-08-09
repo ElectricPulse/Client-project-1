@@ -15,7 +15,7 @@ const Packages: React.FC<Props> = (props) => {
       <h1 className={styles.title}>{props.title}</h1>
       <ul>
         {props.packages.map((info, index) => (
-          <Package package={info} index={index} />
+          <Package key={Math.random()} package={info} index={index} />
         ))}
       </ul>
     </section>
