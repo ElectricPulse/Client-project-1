@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './index.module.scss'
+import styles from 'styles/index.module.scss'
 
 import hero from 'public/hero.jpg'
 import InternalImage from 'components/UI/InternalImage'
