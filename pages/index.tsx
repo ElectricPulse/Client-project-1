@@ -3,8 +3,6 @@ import styles from 'styles/index.module.scss'
 
 import hero from 'public/hero.jpg'
 import InternalImage from 'components/UI/InternalImage'
-import Quote from 'components/Quote/Quote'
-import Reviews from 'components/Reviews/Reviews'
 import Header from 'components/Layout/Header'
 import Navigation from 'components/Layout/Navigation'
 import Content from 'components/Layout/Content'
@@ -21,13 +19,6 @@ const Home: React.FC = () => {
         />
       </Header>
       <Content>
-        <Quote />
-        <Reviews
-          reviews={Array(3).fill({
-            title: 'Lorem ipsum dolem',
-            text: 'Lorem ipsum dolem Lorem ipsum dolem Lorem ipsum dolem',
-          })}
-        />
       </Content>
       <Footer />
     </>
