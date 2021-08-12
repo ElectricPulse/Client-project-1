@@ -1,7 +1,13 @@
 @import 'styles/variables';
 
 .link {
-  padding: 0.6em 1.5em;
-  background-color: $color-primary;
-  box-shadow: $shadow;
+  &__wrapper {
+    position: absolute;
+    padding: 0.6em 1.5em;
+    box-shadow: $shadow;
+  }
+
+  &__anchor {
+    white-space: nowrap;
+  }
 }

@@ -2,14 +2,16 @@
 /// Colors
 ////////////////
 
-$color-primary: #ff9c00;
-$color-secondary: #fffdf7;
+$color-grey-1: #515151;
+$color-grey-2: #6d6d6d;
 
-$color-grey-1: rgb(230, 230, 230);
-$color-grey-2: rgb(85, 85, 85);
+$color-primary: #6b0086;
+$color-secondary: #0c8500;
+
 $color-white: white;
 $color-black: black;
 
+////////////////
 /// Other Variables
 ////////////////
 
@@ -20,7 +22,7 @@ $shadow: 0 10px 20px rgb(black, 0.5);
 /// Breakpoints
 ////////////////
 
-$bp-mobile: 500px;
+$bp-mobile: 900px;
 
 ////////////////
 /// Mixins

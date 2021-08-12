@@ -1,6 +1,8 @@
 @import 'styles/variables';
 
 .navigation {
+  background-color: $color-primary;
+  position: relative;
   z-index: 1;
 
   &--fixed {
@@ -9,6 +11,3 @@
     top: 0;
   }
 }
-
-
-

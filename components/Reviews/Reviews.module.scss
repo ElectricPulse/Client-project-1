@@ -1,33 +1,36 @@
 @import 'styles/variables';
 
 .root {
-  background-color: $color-grey-1;
+  width: 70%;
+  @include screen($bp-mobile) {
+    width: 100%;
+  }
 }
 
 .list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 
-  $skew: 5deg;
-  margin-inline: auto;
-  margin-block: max(20px, 4vw);
+  --skew: 5deg;
 
-  align-items: center;
+  @include screen($bp-mobile) {
+    --skew: 0;
+  }
 
   > * {
-    transform: skewX($skew);
+    transform: skewX(var(--skew));
 
     > * {
-      transform: skewX(-$skew);
+      transform: skewX(calc(var(--skew) * -1));
     }
   }
 
   > *:nth-child(odd) {
-    transform: skewX(-$skew);
+    transform: skewX(calc(var(--skew) * -1));
 
     > * {
-      transform: skewX($skew);
+      transform: skewX(var(--skew));
     }
   }
 }

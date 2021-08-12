@@ -4,21 +4,42 @@ import styles from './Image.module.scss'
 import Image from 'next/image'
 import joinClasses from 'utils/joinClasses'
 
-interface Props {
-  image: any
-  aspectRatio?: string
-  className?: string
+interface Aspect {
+  layout: 'aspect'
+  aspectRatio: string
 }
 
+interface Responsive {
+  layout: 'responsive'
+}
+
+type Props = {
+  className?: string
+  image: any
+} & (Aspect | Responsive)
+
 const InternalImage: React.FC<Props> = (props) => {
-  return (
-    <div
-      className={joinClasses(styles.root, props.className)}
-      style={{ aspectRatio: props.aspectRatio }}
-    >
-      <Image src={props.image} layout="fill" className={styles.image} />
-    </div>
-  )
+  switch (props.layout) {
+    case 'aspect':
+      return (
+        <div
+          className={joinClasses(styles['aspect__root'], props.className)}
+          style={{ aspectRatio: props.aspectRatio }}
+        >
+          <Image src={props.image} layout="fill" className={styles['aspect__image']} />
+        </div>
+      )
+
+    case 'responsive':
+      return (
+        <div className={props.className}>
+          <Image src={props.image} layout="responsive" />
+        </div>
+      )
+
+    default:
+      return <></>
+  }
 }
 
 export default InternalImage

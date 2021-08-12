@@ -3,27 +3,25 @@
 .root {
   position: relative;
 
-  margin-block: max(100px, 10vh);
-  margin-inline: auto;
-  padding: 1.2em 1.5em;
-  background-color: #fff3bc;
-
+  font-family: 'Podkova', Georgia;
   font-size: 2.6rem;
-  font-family: Georgia;
+  padding: 2.5vw;
+  background-color: #fff3bc;
 
   &::after {
     content: '\201C';
-    position: absolute;
-    left: 5px;
-    top: -25px;
 
-    font-size: 7.5em;
-    color: $color-grey-1;
+    position: absolute;
+    left: 0.04em;
+    top: -0.18em;
+
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.158);
   }
 }
 
 .text {
-  width: 25ch;
+  max-width: 35ch;
 
   position: relative;
   z-index: 1;

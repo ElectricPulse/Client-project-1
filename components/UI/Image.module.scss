@@ -1,7 +1,9 @@
-.root {
-  position: relative;
-}
+.aspect {
+  &__root {
+    position: relative;
+  }
 
-.image {
-  object-fit: cover;
+  &__image {
+    object-fit: cover;
+  }
 }

@@ -2,13 +2,13 @@
 
 .root {
   display: flex;
-  padding: max(15px, 3vw);
+  padding: max(20px, 2.5vw);
   justify-content: space-between;
 }
 
 .links {
   display: flex;
-  gap: max(10px, 2vw);
+  gap: max(25px, 5vw);
 
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }

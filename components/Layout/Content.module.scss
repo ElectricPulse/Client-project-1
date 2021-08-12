@@ -3,5 +3,6 @@
 .content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: max(20px, 4vw)
 }

@@ -11,9 +11,7 @@ interface Props {
 const NavigationDesktop: React.FC<Props> = (props) => {
   return (
     <div className={joinClasses(styles.root, props.className)}>
-      <div>
-        LOGO
-      </div>
+      <div></div>
       <nav className={styles.links}>
         <Link href="/">Home</Link>
         <Link href="/services">Services</Link>

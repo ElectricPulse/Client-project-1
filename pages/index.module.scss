@@ -1,0 +1,40 @@
+@import 'styles/variables';
+
+.header {
+  height: 80vh;
+  margin-bottom: max(50px, 5vw);
+  position: relative;
+
+  $overlay: black;
+  background: linear-gradient(rgba($overlay, 0.65) 20%, rgba($overlay, 0.25));
+}
+
+.hero {
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.navigation {
+  background-color: transparent !important;
+  color: $color-white;
+}
+
+.cta {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+
+  font-size: 2.2rem;
+  border-radius: 10px;
+  background-color: $color-secondary;
+  color: $color-white;
+}
+
+.section-break {
+  width: 50%;
+  height: 2px;
+
+  background-color: grey;
+}

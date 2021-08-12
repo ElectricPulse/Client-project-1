@@ -3,7 +3,6 @@ import styles from './Navigation.module.scss'
 
 import NavigationMobile from './NavigationMobile'
 import NavigationDesktop from './NavigationDesktop'
-
 import useMediaQuery from 'hooks/useMediaQuery'
 import useScroll from 'hooks/useScroll'
 import joinClasses from 'utils/joinClasses'

@@ -1,16 +1,14 @@
 import React from 'react'
 import styles from './Quote.module.scss'
 
-import joinClasses from 'utils/joinClasses'
-
 const Quote: React.FC = () => {
   return (
     <section className={styles.root}>
-
-
       <p className={styles.text}>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora minus,
-        temporibus delectus voluptatem eaque soluta.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+        temporibus exercitationem et voluptatum quaerat corporis culpa velit ea,
+        ullam fugiat amet provident officiis deserunt dolores, ducimus eius
+        natus? Autem, debitis!
       </p>
     </section>
   )
