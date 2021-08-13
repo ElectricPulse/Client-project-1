@@ -2,11 +2,10 @@
 
 .header {
   height: 80vh;
-  margin-bottom: max(50px, 5vw);
   position: relative;
 
   $overlay: black;
-  background: linear-gradient(rgba($overlay, 0.65) 20%, rgba($overlay, 0.25));
+  background: linear-gradient(rgba($overlay, 0.85) 15%, rgba($overlay, 0.6));
 }
 
 .hero {
@@ -16,7 +15,7 @@
 }
 
 .navigation {
-  background-color: transparent !important;
+  background: transparent !important;
   color: $color-white;
 }
 

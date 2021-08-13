@@ -1,2 +1,56 @@
 @import 'styles/variables';
 
+.root {
+  display: flex;
+  padding: 1vw max(15px, 3.5vw);
+  justify-content: space-between;
+}
+
+.button__sidebar {
+  font-size: 45px;
+  color: $color-white;
+}
+
+.sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  inset-block: 0;
+
+  background: linear-gradient($color-secondary);
+  overflow: hidden;
+  z-index: 100;
+
+  transition: all ease-in-out 0.4s;
+
+  &--visible {
+    width: 100%;
+  }
+
+  &--hidden {
+    width: 0px;
+  }
+
+  &__close {
+    position: absolute;
+    $offset: max(15px, 5vw);
+    top: $offset;
+    right: $offset;
+
+    font-size: 42px;
+    color: $color-white;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: max(15px, 4vw);
+    position: absolute;
+
+    font-size: 2.2rem;
+    font-weight: 600;
+    white-space: nowrap;
+    color: $color-white;
+  }
+}

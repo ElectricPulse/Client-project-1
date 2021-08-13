@@ -1,7 +1,7 @@
 @import 'styles/variables';
 
 .root {
-  width: 70%;
+  width: 90%;
   @include screen($bp-mobile) {
     width: 100%;
   }

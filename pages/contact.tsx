@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './index.module.scss'
+import styles from './contact.module.scss'
 
 import profile from 'public/profile.png'
 import hero from 'public/hero.jpg'
@@ -18,7 +18,7 @@ const Home: React.FC = () => {
       <Header className={styles.header}>
         <Navigation
           className={styles.navigation}
-          breakpoints={{ mobile: 500, fixed: 500 }}
+          breakpoints={{ mobile: 890, fixed: 500 }}
         />
         <Image className={styles.hero} src={hero} layout="fill" />
         <Button href="/services" className={styles.cta}>

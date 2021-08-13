@@ -19,9 +19,9 @@ type Props = {
 const Button: React.FC<Props> = (props) => {
   if ('href' in props) {
     return (
-      <div className={joinClasses(props.className, styles['link__wrapper'])}>
+      <div className={joinClasses(props.className, styles.link)}>
         <Link href={props.href}>
-          <a className={styles['link__anchor']}>{props.children}</a>
+          <a>{props.children}</a>
         </Link>
       </div>
     )

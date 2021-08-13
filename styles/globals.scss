@@ -6,12 +6,15 @@
 
 html,
 body {
-  font-family: 'Josefin-Sans', arial, sans-serif;
+  font-family: "Josefin Sans", arial, sans-serif;
 }
 
 html {
   //10px
   font-size: 62.5%;
+  @include screen(700px){
+    font-size: 56.25%
+  }
 }
 
 * {
@@ -31,6 +34,7 @@ a {
 
 button {
   border: none;
+  background: none;
 }
 
 ul,

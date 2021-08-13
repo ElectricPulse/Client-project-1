@@ -1,13 +1,8 @@
 @import 'styles/variables';
 
 .link {
-  &__wrapper {
-    position: absolute;
-    padding: 0.6em 1.5em;
-    box-shadow: $shadow;
-  }
-
-  &__anchor {
-    white-space: nowrap;
-  }
+  position: absolute;
+  padding: 0.6em 1.5em;
+  box-shadow: $shadow;
+  white-space: nowrap;
 }
