@@ -2,6 +2,7 @@
 
 .header {
   height: 80vh;
+  padding-top: 20px;
   position: relative;
 
   $overlay: black;
@@ -25,7 +26,7 @@
   bottom: 0;
   transform: translate(-50%, 50%);
 
-  font-size: 2.2rem;
+  font-size: 2.7em;
   border-radius: 10px;
   background-color: $color-secondary;
   color: $color-white;

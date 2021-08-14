@@ -10,7 +10,7 @@
 .list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: max(5px, 1vw);
 
   --skew: 5deg;
 
