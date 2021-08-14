@@ -28,7 +28,6 @@ const Home: React.FC = () => {
             doloremque!
           </p>
         </section>
-        <Packages />
       </Content>
       <Footer />
     </>
